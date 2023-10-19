@@ -1,7 +1,7 @@
 import React from 'react';
 import Statistics from './Statistics';
 import Section from './Section';
-import FeedbackOptions from 'components/FeedbackOptions';
+import FeedbackOptions from 'components/Feedback/FeedbackOptions';
 import Notification from './Notification';
 
 class Feedback extends React.Component {
@@ -31,7 +31,7 @@ class Feedback extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
